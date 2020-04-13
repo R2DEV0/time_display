@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Time to get ill</title>
+</head>
+
+<body>
+    <h1 id = "text">The local time & date is:</h1>
+    <h1 id = "date_time"> {{ time }} </h1>
+    <img id ="cat" src = "static/cat.gif">
+    <p id = "checkout">If you loved this page, check out this <a href="/random">Random Word Generator!</a></p>
+</body>
+
+
+<style>
+    #checkout{
+    color: white;
+    font-size: 23px;
+    margin-top: 3px;
+}
+
+a{
+    color: hotpink;
+}
+
+</style>
+
+</html>

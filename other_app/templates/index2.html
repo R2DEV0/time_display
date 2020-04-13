@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rando Maker</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <style>
+
+    body{
+    margin: 0 auto;
+    background-color: silver;
+    }
+
+    .rando_word{
+        font-size: 70px;
+        font-family: sans-serif;
+        border: 2px solid black;
+        text-decoration: wavy;
+        background-color: white;
+        width: 800px;
+        padding: 5px;
+        margin-left: 80px;
+        box-shadow: 4px 4px darkblue;
+    }
+
+    .button{
+        border: 2px inset black;
+        background-color: white;
+        font-weight: bold;
+        color: black;
+        width: 150px;
+        height: 40px;
+        box-shadow: 2px 2px darkblue;
+    }
+
+    .main_text{
+        margin-top: 50px;
+    }
+
+    .reset_count{
+        margin-top: 5px;
+        color: red;
+        width: 150px;
+        height: 40px;
+        border: 2px inset black;
+        background-color: white;
+        font-weight: bold;
+        box-shadow: 2px 2px darkblue;
+    }
+
+    h2{
+        margin-top: 60px;
+    }
+
+    a{
+        color: greenyellow;
+    }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <h1 class = 'main_text'>Random Word (attempt #{{ count }})</h1>
+    <form action='random' method ='GET'>
+        <p class='rando_word'>{{a_string}}</p>
+        <button class ="button" type="submit">Generate</button>
+    </form>
+
+    <form action="reset_count" method='GET'>
+        <button class ="reset_count" type="submit">RESET</button>
+    </form>
+
+    <h2 id='end'>This page is Super cool!</h2>
+    <h3>You can go back to the time by clicking <a href="/">here</a></h3>
+
+</body>
+
+</html>  

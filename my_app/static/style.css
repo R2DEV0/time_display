@@ -1,0 +1,40 @@
+body{
+    margin: 0 auto;
+    background-color: grey;
+    width: 970px;
+    height: 800px;
+    text-align: center;
+}
+
+#text{
+    border-radius: 5px;
+    color: whitesmoke;
+    margin: 50px auto -20px auto;
+    display: inline-block;
+    padding: 10px;
+    font-size: 60px;
+    text-decoration: underline;
+    text-decoration-color: red;
+    font-style: italic;
+    font-family: Arial, sans-serif;
+}
+
+#date_time{
+    font-size: 70px;
+    border: 4px groove black;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+#cat{
+    border-radius: 300px;
+    width: 750px;
+    height: 550px;
+    border: 3px groove red;
+}
+
+#checkout{
+    color: white;
+}
